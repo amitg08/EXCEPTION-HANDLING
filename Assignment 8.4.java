@@ -1,0 +1,22 @@
+import java.lang.String;
+import java.io.*;
+import java.util.*;
+
+public class CountVowel {
+	
+	public static void main(String args[]) throws IOException {
+	      BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+	      System.out.println("Enter the String:");
+	      String text = bf.readLine();
+
+	      int count = 0;
+	      for (int i = 0; i < text.length(); i++) {
+	          char c = text.charAt(i);
+	          if (c=='a'|c=='e'|c=='i'|c=='o'|c=='u') {
+	              count++;
+	          }
+	      }
+	      System.out.println("The number of vowels in the given sentence are " + count);
+	  }
+
+}
